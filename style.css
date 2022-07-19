@@ -2,7 +2,7 @@ body{
     width: 960px;
     margin: 0 auto;
 }
-h2{
+h1{
     text-align: center;
     color: green;
     font-weight: bold;
@@ -52,7 +52,7 @@ span {
     float:left;
     
 }
-h4{
+h3{
     text-align:center;
     background-color:#070707;
     color: rgb(215, 227, 238);
