@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>নির্বাচন</title>
+</head>
+
+<body>
+    <h2>৩ নং হোসেনগাঁও ইউনিয়ন পরিষধ নির্বাচন - ২০২২</h2>
+    <div id="first">
+        <img src="baik.jpeg" alt="">
+        <button id="baik">ভোট দিন</button>
+        <span id="baikCount">28</span>
+    </div>
+    <div>
+        <img src="gora.jpeg" alt="">
+        <button id="gora">ভোট দিন</button>
+        <span id="goraCount">43</span>
+    </div>
+    <div>
+        <img id="nouka1" src="nouka.png" alt="">
+        <button id="nouka">ভোট দিন</button>
+        <span id="noukaCount">58</span>
+    </div>
+    <div>
+        <img id="hati1" src="anaros.jpeg" alt="">
+        <button id="anaros">ভোট দিন</button>
+        <span id="anarosCount">51</span>
+    </div>
+    <div>
+        <img id="cosma1" src="cosma.jpeg" alt="">
+        <button id="cosma">ভোট দিন</button>
+        <span id="cosmaCount">13</span>
+    </div>
+
+    <script>
+        // baik Vote
+        const baikBtn = document.getElementById("baik");
+        baikBtn.addEventListener("click", function () {
+            alert("আপনার ভোটটি সফল ভাবে মোটর সাইকেল মার্কায় দেওয়া হলো!");
+
+            // alert("ইভিএম এর মাধ্যমে ভোট দেওয়ার জন্য আপনাকে ধন্যবাদ..")
+        })
+        let count = 28;
+        const baikVote = document.getElementById("baik");
+        const baikVote1 = document.getElementById("baikCount")
+        baikVote.addEventListener("click", function () {
+            baikVote1.innerHTML = ++count;
+        })
+
+
+        // gora Vote
+        const goraBtn = document.getElementById("gora");
+        goraBtn.addEventListener("click", function () {
+            confirm("আপনার ভোটটি সফল ভাবে ঘোড়া মার্কায় দেওয়া হলো!");
+        })
+        let count2 = 43;
+        const goraVote = document.getElementById("gora");
+        const goraVote2 = document.getElementById("goraCount")
+        goraVote.addEventListener("click", function () {
+            goraVote2.innerHTML = ++count2;
+        })
+
+
+        // nouka Vote
+        const noukaBtn = document.getElementById("nouka");
+        noukaBtn.addEventListener("click", function () {
+            confirm("আপনার ভোটটি সফল ভাবে নৌকা মার্কায় দেওয়া হলো!");
+        })
+        let count3 = 58;
+        const noukaVote = document.getElementById("nouka");
+        const noukaVote3 = document.getElementById("noukaCount")
+        noukaVote.addEventListener("click", function () {
+            noukaVote3.innerHTML = ++count3;
+        })
+
+
+        // anaros Vote
+        const anarosBtn = document.getElementById("anaros");
+        anarosBtn.addEventListener("click", function () {
+            confirm("আপনার ভোটটি সফল ভাবে আনারস মার্কায় দেওয়া হলো!");
+        })
+        let count4 = 51;
+        const anarosVote = document.getElementById("anaros");
+        const anarosVote4 = document.getElementById("anarosCount")
+        anarosVote.addEventListener("click", function () {
+            anarosVote4.innerHTML = ++count4;
+        })
+
+
+        // Chosma Vote
+        const cosmaBtn = document.getElementById("cosma");
+        cosmaBtn.addEventListener("click", function () {
+            confirm("আপনার ভোটটি সফল ভাবে চশমা মার্কায় দেওয়া হলো!");
+        })
+        let count5 = 13;
+        const cosmaVote = document.getElementById("cosma");
+        const cosmaVote5 = document.getElementById("cosmaCount")
+        cosmaVote.addEventListener("click", function () {
+            cosmaVote5.innerHTML = ++count5;
+        })
+    </script>
+
+    <h4>Developer by <a href="www.facebook.com/abdulgaffar530" target="_blank">Abdul Gaffar</a> @ 2022</h4>
+</body>
+
+</html>
